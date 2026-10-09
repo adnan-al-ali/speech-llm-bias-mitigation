@@ -1,0 +1,13 @@
+# requires GPU during installation
+name: sbm-snake-vllm
+channels:
+  - conda-forge
+dependencies:
+  - python==3.12
+  - pip==25.2
+  - ffmpeg==8.0.1
+  - libstdcxx-ng
+  - uv
+variables:
+  CUDA_HOME: "/opt/cuda/13.0"
+  VLLM_USE_FLASHINFER_SAMPLER: "0"

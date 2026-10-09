@@ -1,0 +1,28 @@
+\begin{table}[h]
+\centering\footnotesize
+\begin{tabularx}{\columnwidth}{C C C | C C C}
+    \toprule
+    LR & rank & step & \textbf{acc}\textsuperscript{$\male \female$} & \textbf{acc}\textsuperscript{\textsc{mmau}} & \textbf{LOR} \\
+    \midrule
+    \multicolumn{3}{c |}{\textbf{Qwen2-Audio-7B}} & \percentGrad{81.5}{0} & \percentGrad{42.1}{0} & 0.40 \\
+    \midrule
+    5e-5 & 32 & 720 & \percentGrad{70.4}{0} & \percentGrad{41.3}{0} & 0.23 \\
+    5e-5 & 16 & 640 & \percentGrad{70.1}{0} & \percentGrad{41.9}{0} & 0.24 \\
+    5e-5 & 32 & 800 & \percentGrad{71.6}{0} & \percentGrad{41.5}{0} & 0.27 \\
+    \midrule
+    \multicolumn{3}{c |}{\textbf{Qwen3-Omni-30B-A3B}} & \percentGrad{99.9}{0} & \percentGrad{75.0}{0} & 0.24 \\
+    \midrule
+    5e-5 & 16 & 400 & \percentGrad{99.9}{0} & \percentGrad{76.2}{0} & 0.22 \\
+    5e-5 & 16 & 320 & \percentGrad{99.9}{0} & \percentGrad{75.0}{0} & 0.22 \\
+    5e-5 & 32 & 320 & \percentGrad{99.9}{0} & \percentGrad{74.2}{0} & 0.22 \\
+    \midrule
+    \multicolumn{3}{c |}{\textbf{Nemotron-3-Nano-Omni-30B-A3B}} & \percentGrad{96.4}{0} & \percentGrad{75.3}{0} & 0.25 \\
+    \midrule
+    5e-5 & 16 & 800 & \percentGrad{93.4}{0} & \percentGrad{73.4}{0} & 0.21 \\
+    5e-5 & 32 & 640 & \percentGrad{91.2}{0} & \percentGrad{73.9}{0} & 0.23 \\
+    5e-5 & 32 & 720 & \percentGrad{92.6}{0} & \percentGrad{75.9}{0} & 0.24 \\
+    \bottomrule
+\end{tabularx}
+\caption{Top three distilled \acrshort{lora} checkpoints per model that satisfy the following criteria: MMAU accuracy stays at least 97\% of the baseline and gender detection accuracy remains at least 70\%. Sorted by \acrshort{lor}, ascending. Coloured cells are in percentage.}
+\label{tab:top3_lora_checkpoints}
+\end{table}

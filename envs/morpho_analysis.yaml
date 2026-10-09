@@ -1,0 +1,11 @@
+name: morpho-analysis
+dependencies:
+ - python==3.12
+ - pip==25.2
+ - pip:
+   - spacy-udpipe==1.0.0
+   - click==8.4.1
+   - strip-markdown
+   - pandas
+   - unidecode
+   # - ufal.morphodita==1.11.3.3

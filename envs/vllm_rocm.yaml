@@ -1,0 +1,20 @@
+name: vllm-rocm
+channels:
+  - conda-forge
+dependencies:
+  - python==3.12
+  - pip==25.2
+  - ffmpeg==8.0.1
+  - libstdcxx-ng
+  - blas-devel
+  - pip:
+    - snakemake==9.20.0
+    - datasets==4.3.0
+    - torchcodec==0.15 
+    - vllm[audio]==0.20.0+rocm721 --extra-index-url https://wheels.vllm.ai/rocm/0.20.0/rocm721
+    - torch==2.11 --index-url https://download.pytorch.org/whl/rocm7.2
+    - accelerate==1.13.0
+    - numpy==2.2
+    - pandas
+    - matplotlib
+    - openai

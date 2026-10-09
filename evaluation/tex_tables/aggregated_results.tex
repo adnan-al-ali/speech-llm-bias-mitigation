@@ -1,0 +1,31 @@
+\begin{table}[h]
+\centering\footnotesize
+\begin{tabularx}{\columnwidth}{C C C C | C C}
+    \toprule
+    $\alpha$ & LR & $\gamma$ & steps & \textbf{acc}\textsuperscript{$\male \female$} & \textbf{acc}\textsuperscript{\textsc{mmau}} \\
+    \midrule
+    \multicolumn{4}{c |}{\textbf{Qwen2-Audio-7B}} & \percentGrad{81.5}{0} & \percentGrad{42.1}{0} \\
+    \midrule
+    \multicolumn{4}{c |}{\textit{pitch normalisation to median}} & \percentGrad{50.3}{0} & \percentGrad{36.9}{0} \\
+    0.05 & 1e-5 & 1.0 & 500 & \percentGrad{46.0}{0} & \percentGrad{46.6}{0} \\
+    0.05 & 1e-5 & 0.5 & 375 & \percentGrad{45.2}{0} & \percentGrad{45.2}{0} \\
+    0.05 & 1e-5 & 1.0 & 375 & \percentGrad{52.4}{0} & \percentGrad{45.1}{0} \\
+    \midrule
+    \multicolumn{4}{c |}{\textbf{Qwen3-Omni-30B-A3B}} & \percentGrad{99.9}{0} & \percentGrad{75.0}{0} \\
+    \midrule
+    \multicolumn{4}{c |}{\textit{pitch normalisation to median}} & \percentGrad{66.2}{0} & \percentGrad{69.3}{0} \\
+    0.05 & 1e-4 & 1.0 & 125 & \percentGrad{54.5}{0} & \percentGrad{71.3}{0} \\
+    0.05 & 1e-4 & 0.5 & 125 & \percentGrad{50.7}{0} & \percentGrad{70.9}{0} \\
+    0.1 & 1e-4 & 0.5 & 500 & \percentGrad{49.1}{0} & \percentGrad{58.8}{0} \\
+    \midrule
+    \multicolumn{4}{c |}{\textbf{Nemotron-3-Nano-Omni-30B-A3B}} & \percentGrad{96.4}{0} & \percentGrad{75.3}{0} \\
+    \midrule
+    \multicolumn{4}{c |}{\textit{pitch normalisation to median}} & \percentGrad{64.2}{0} & \percentGrad{70.9}{0} \\
+    0.2 & 1e-4 & 2.0 & 375 & \percentGrad{50.8}{0} & \percentGrad{73.5}{0} \\
+    0.1 & 1e-4 & 1.0 & 375 & \percentGrad{46.0}{0} & \percentGrad{73.0}{0} \\
+    0.2 & 1e-4 & 0.5 & 500 & \percentGrad{51.1}{0} & \percentGrad{73.0}{0} \\
+    \bottomrule
+\end{tabularx}
+\caption{Top three hyperparameter configurations for each model that achieve gender detection accuracy below 0.6. Pitch normalisation was applied to the original model; the median was 144 Hz. Coloured cells are in percentage.}
+\label{tab:top5_hyperparams}
+\end{table}

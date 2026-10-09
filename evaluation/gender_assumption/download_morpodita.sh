@@ -1,0 +1,2 @@
+curl -o "evaluation/gender_assumption/models/czech-morfflex2.0-pdtc1.0-220710.zip" "https://lindat.mff.cuni.cz/repository/server/api/core/bitstreams/handle/11234/1-4794/czech-morfflex2.0-pdtc1.0-220710.zip"
+unzip "evaluation/gender_assumption/models/czech-morfflex2.0-pdtc1.0-220710.zip" -d "evaluation/gender_assumption/models/czech-morfflex2.0-pdtc1.0-220710"

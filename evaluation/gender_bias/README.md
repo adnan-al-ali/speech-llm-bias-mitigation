@@ -1,0 +1,1 @@
+This part of the project reuses the files and code from https://github.com/TAI-HAMBURG/SpeechAccess-Bias/

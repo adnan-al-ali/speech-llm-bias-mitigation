@@ -1,0 +1,3 @@
+[submodule "utils/audio_flamingo_3_chat"]
+	path = utils/audio_flamingo_3_chat
+	url = git@hf.co:spaces/nvidia/audio-flamingo-3-chat

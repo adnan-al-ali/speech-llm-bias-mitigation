@@ -1,0 +1,33 @@
+# requires GPU during installation
+name: adversarial
+dependencies:
+ - python==3.12
+ - transformers==5.6.2
+ - flash-attn-layer-norm==2.8.3
+ - pip==25.2
+ - pytorch-gpu==2.10.0
+ - torchvision==0.25.0
+ - accelerate==1.13.0
+ - transformer-engine-torch
+ - cuda-toolkit
+ - libstdcxx-ng>=13
+ - bitsandbytes
+ - peft
+ - pip:
+    - snakemake==9.20.0
+    - datasets==4.3.0
+    - torchcodec==0.10
+    - torch-gradient-reversal==1.0.0
+    - peft==0.19.1
+    - mistral-common==1.11.7
+    - open-clip-torch
+    - timm
+    - duckdb
+    - librosa
+    - soundfile
+    - kaggle
+    - tensorboard==2.20.0
+    - setuptools==81.0.0
+    - lora
+    - torchmetrics
+    - dotenv

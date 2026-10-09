@@ -1,0 +1,29 @@
+\begin{table}[h]
+    \centering\footnotesize
+    \begin{tabularx}{\columnwidth}{C | C C C}
+        \toprule
+        \textbf{Model} & \textbf{bias}\textsuperscript{$\male$} & \textbf{bias}\textsuperscript{$\female$} & \textbf{LOR} \\ 
+    
+    \midrule
+    \multicolumn{4}{c}{\textbf{Qwen2-Audio-7B}} \\
+    \midrule
+    base & \percentGrad{55.0}{0} & \percentGrad{55.0}{0} & 0.40 \\
+    \acrshort{gum} & \percentGrad{56.3}{0} & \percentGrad{46.3}{0} & 0.10 \\
+    dist. & \percentGrad{58.4}{0} & \percentGrad{47.4}{0} & 0.23 \\
+    \midrule
+    \multicolumn{4}{c}{\textbf{Qwen3-Omni-30B-A3B}} \\
+    \midrule
+    base & \percentGrad{56.1}{0} & \percentGrad{49.9}{0} & 0.24 \\
+    \acrshort{gum} & \percentGrad{55.3}{0} & \percentGrad{47.2}{0} & 0.10 \\
+    dist. & \percentGrad{55.4}{0} & \percentGrad{50.0}{0} & 0.22 \\
+    \midrule
+    \multicolumn{4}{c}{\textbf{Nemotron-3-Nano-Omni-30B-A3B}} \\
+    \midrule
+    base & \percentGrad{52.4}{0} & \percentGrad{53.9}{0} & 0.25 \\
+    \acrshort{gum} & \percentGrad{42.2}{0} & \percentGrad{62.1}{0} & 0.18 \\
+    dist. & \percentGrad{50.5}{0} & \percentGrad{54.8}{0} & 0.21 \\
+    \bottomrule
+    \end{tabularx}
+    \caption{\textbf{Gender bias} evaluation results for the model variants. Key: bias\textsuperscript{$\male$}/bias\textsuperscript{$\female$}: percentage of samples where the model chose the stereotypical option for masculine/feminine voices (expected 50\% for uniformly random selection), LOR: log odds ratio. Coloured values are in percentages.}
+    \label{tab:gender-bias-results}
+\end{table}

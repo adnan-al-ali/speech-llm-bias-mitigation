@@ -1,0 +1,1 @@
+curl -o "evaluation/gender_assumption/models/czech-pdt-ud-2.5-191206.udpipe" "https://lindat.mff.cuni.cz/repository/server/api/core/bitstreams/handle/11234/1-3131/czech-pdt-ud-2.5-191206.udpipe"

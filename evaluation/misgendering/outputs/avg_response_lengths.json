@@ -1,0 +1,8 @@
+{
+    "best-checkpoint_Qwen3-Omni-30B-A3B-Instruct": 175.7170731707317,
+    "Qwen3-Omni-30B-A3B-Instruct": 292.0292682926829,
+    "best-checkpoint_Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16": 119.53414634146341,
+    "Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16": 144.6,
+    "Qwen2-Audio-7B-Instruct": 81.32926829268293,
+    "best-checkpoint_Qwen2-Audio-7B-Instruct": 118.42682926829268
+}

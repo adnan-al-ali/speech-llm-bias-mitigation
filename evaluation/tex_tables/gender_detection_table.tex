@@ -1,0 +1,28 @@
+\begin{table}[h]
+    \centering\footnotesize
+    \begin{tabularx}{\columnwidth}{C | C C C C C }
+        \toprule
+        \textbf{Model} & \textbf{acc}\textsubscript{abs} & \textbf{acc}\textsubscript{NR} & \textbf{refuse} & $\%\male$ & $\%\female$ \\
+    \midrule
+    \multicolumn{6}{c}{\textbf{Qwen2-Audio-7B}} \\
+    \midrule
+    base & \percentGrad{81.5}{0} & \percentGrad{90.7}{0} & \percentGrad{10.1}{0} & \percentGrad{31.4}{0} & \percentGrad{58.4}{0} \\
+    \acrshort{gum} & \percentGrad{46.0}{0} & \percentGrad{64.5}{0} & \percentGrad{28.8}{0} & \percentGrad{12.6}{0} & \percentGrad{58.7}{0} \\
+    dist. & \percentGrad{70.4}{0} & \percentGrad{87.7}{0} & \percentGrad{19.7}{0} & \percentGrad{20.8}{0} & \percentGrad{59.7}{0} \\
+    \midrule
+    \multicolumn{6}{c}{\textbf{Qwen3-Omni-30B-A3B}} \\
+    \midrule
+    base & \percentGrad{99.9}{0} & \percentGrad{99.9}{0} & \percentGrad{0.0}{0} & \percentGrad{49.9}{0} & \percentGrad{50.1}{0} \\
+    \acrshort{gum} & \percentGrad{54.5}{0} & \percentGrad{54.5}{0} & \percentGrad{0.0}{0} & \percentGrad{4.5}{0} & \percentGrad{95.5}{0} \\
+    dist. & \percentGrad{99.9}{0} & \percentGrad{99.9}{0} & \percentGrad{0.0}{0} & \percentGrad{49.9}{0} & \percentGrad{50.1}{0} \\
+    \midrule
+    \multicolumn{6}{c}{\textbf{Nemotron-3-Nano-Omni-30B-A3B}} \\
+    \midrule
+    base & \percentGrad{96.4}{0} & \percentGrad{96.6}{0} & \percentGrad{0.2}{0} & \percentGrad{47.4}{0} & \percentGrad{52.4}{0} \\
+    \acrshort{gum} & \percentGrad{50.8}{0} & \percentGrad{80.8}{0} & \percentGrad{37.1}{0} & \percentGrad{23.9}{0} & \percentGrad{39.0}{0} \\
+    dist. & \percentGrad{93.4}{0} & \percentGrad{93.7}{0} & \percentGrad{0.3}{0} & \percentGrad{44.8}{0} & \percentGrad{54.9}{0} \\
+    \bottomrule
+    \end{tabularx}
+    \caption{\textbf{Gender detection} evaluation results for baseline and \acrshort{gum} models. Key: acc\textsubscript{abs}: absolute gender detection accuracy, acc\textsubscript{NR}: accuracy on non-refused samples, refuse: refusal rate, $\%\male$/$\%\female$: fraction of samples predicted as male/female. Values in percentages.}
+    \label{tab:gender-detection-results}
+\end{table}

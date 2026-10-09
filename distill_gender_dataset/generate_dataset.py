@@ -1,8 +1,7 @@
 from pathlib import Path
 import os
 import sys
-# os.environ["LD_LIBRARY_PATH"] = "/home/alali/personal_work_troja/miniconda/lib/"
-# export LD_LIBRARY_PATH=/home/alali/personal_work_troja/miniconda/lib/
+
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
